@@ -14,7 +14,7 @@ This code requires the following:
 * Scikit-learn>=0.24.2
 
 ## Datesets
-* TWITTER(https://github.com/MKLab-ITI/image-verification-corpus/tree/master/mediaeval2015)
+* [TWITTER](https://github.com/MKLab-ITI/image-verification-corpus/tree/master/mediaeval2015)
 
 ## Running the experiments
 ### Twitter
