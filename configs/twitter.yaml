@@ -1,0 +1,28 @@
+# data
+dataset: twitter
+max_word_length: 20
+
+# train
+max_epoch: 150
+batch_size: 256
+
+contextual_transform:
+    output_dim: 768
+    input_fc: false
+    num_layers: 2
+    num_heads: 12
+    dropout: 0.1
+    use_context: true
+    atn_ct_num_layers: 2
+    atn_ct_num_heads: 12
+    pooler: avg
+
+# model
+# 0: sequences, 1: matrix, 2: bert
+embedding_size: 768
+hidden_size: 64
+dropout_rate: 0.1
+vocab_size: 4000
+vgg_size: 4096
+bert_size: 768
+matrix_size: 4000
