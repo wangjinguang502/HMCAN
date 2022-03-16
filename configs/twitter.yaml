@@ -16,13 +16,3 @@ contextual_transform:
     atn_ct_num_layers: 2
     atn_ct_num_heads: 12
     pooler: avg
-
-# model
-# 0: sequences, 1: matrix, 2: bert
-embedding_size: 768
-hidden_size: 64
-dropout_rate: 0.1
-vocab_size: 4000
-vgg_size: 4096
-bert_size: 768
-matrix_size: 4000
