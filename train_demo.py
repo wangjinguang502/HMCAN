@@ -39,11 +39,11 @@ print(torch.cuda.is_available())
 
 def load_data(mode):
     dataset_dir = 'data/processed/' + configs.dataset
-    pheme_label_list_path = os.path.join(dataset_dir, 'shuffle_{}_{}_label.pt'.format(configs.dataset, mode))
-    pheme_vgg_list_path = os.path.join(dataset_dir, 'shuffle_{}_{}_resnet.pt'.format(configs.dataset, mode))
-    pheme_bert_list_path = os.path.join(dataset_dir, 'shuffle_{}_{}_bert.pt'.format(configs.dataset, mode))
+    data_label_list_path = os.path.join(dataset_dir, 'shuffle_{}_{}_label.pt'.format(configs.dataset, mode))
+    data_vgg_list_path = os.path.join(dataset_dir, 'shuffle_{}_{}_resnet.pt'.format(configs.dataset, mode))
+    data_bert_list_path = os.path.join(dataset_dir, 'shuffle_{}_{}_bert.pt'.format(configs.dataset, mode))
 
-    datasets = Dataset(pheme_label_list_path, pheme_vgg_list_path, pheme_bert_list_path)
+    datasets = Dataset(data_label_list_path, data_vgg_list_path, data_bert_list_path)
 
     return datasets
 
